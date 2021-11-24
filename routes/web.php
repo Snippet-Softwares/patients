@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('all_patients','all_patients@checkDB');
+Route::get('patients_by_id','patients_by_id@checkDB');
+Route::get('patients_by_name','patients_by_name@checkDB');
+Route::get('insert_patient','insert_patient@checkDB');
